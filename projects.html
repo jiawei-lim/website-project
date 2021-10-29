@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="javascript" href="http://localhost:35729/livereload.js">
+<link rel="stylesheet" href="faradaystylesheet.css">
+<title>Faraday Futuristics</title>
+<link rel="icon" href="waves_876527.png">
+<script src="https://kit.fontawesome.com/f458dc2338.js" crossorigin="anonymous"></script>
+<script>
+
+  function calc(){
+    document.getElementById("moreinfo").style.display = "none";
+    document.getElementById("embed_calculator").style.display = "block";
+  }
+
+  function info(){
+    document.getElementById("embed_calculator").style.display = "none";
+    document.getElementById("moreinfo").style.display = "block";
+  }
+
+</script>
+</head>
+<body>
+  <header>
+    <a href="index.html"><div class="branding">
+      <img src="white waves.png" alt="logo" id="logo">
+      <h1>FARADAY FUTURISTICS</h1>
+    </div>
+    </a>
+    <div class="nav-menu">
+      <nav>
+        <a href="products.php" class="navitems">PRODUCTS<i class="fas fa-microchip"></i></a>
+          <a href="projects.html" class="navitems">INITIATIVES<i class="fas fa-hands-helping"></i></a>
+        <a href="help.html" class="navitems">HELP<i class="fas fa-info-circle"></i></a>
+        <a href="account.php" class="navitems">ACCOUNT<i class="fas fa-user-circle"></i></a>
+      </nav>
+    </div>
+  </header>
+    <div class="headercolor"></div>
+    <div class="projectcontainer">
+      <img src="cropped-1920-1080-938183.jpg" alt="brandmessage" width="100%">
+      <div class="centered projectheadertext"><p>Faraday for a Greener Environment</p></div>
+      <div class="projectcontent">
+        <div id="moreinfo">
+        <h2 id="projecth2">What are greenhouse gasses?</h2>
+          <p>Greenhouse gases include carbon dioxide, methane, nitrous oxide and other gases that accumulate in the atmosphere and create the heat-reflective layer that keeps the Earth at a livable temperature.
+           These gases form the insulation that keeps the planet warm enough to support life.Some of the most common - and worrisome - greenhouse gases are:
+         </p>
+         <p id="projectp">Carbon dioxide, which is emitted whenever coal, oil, natural gas and other carbon-rich fossil fuels are burned. Although carbon dioxide is not the most powerful greenhouse gas, it is the largest contributor to climate change because it is so common. In order to reduce carbon dioxide emissions, we need to reduce the amount of fuel we use in our cars, homes, and lives.</p>
+         <p id="projectp">Methane is caused by the decomposition of plant matter, and is released from landfills, swamps, rice paddies. Cattle also release methane. Although methane emissions are lower than carbon dioxide emissions, it is considered a major greenhouse gas because each methane molecule has 25 times the global warming potential of a carbon dioxide molecule</p>
+        <h2 id="projecth2">Why does it matter?</h2>
+        <p>Modern climate change is caused by an excess of greenhouse gases. This, in turn, over-insulates the planet. As a result, temperatures rise. Imagine wearing a winter parka in the tropics. The effect is similar - too much insulation causes the planet to overheat, which has already begun to change the climate.</p>
+        <h2 id="projecth2">What can be done?</h2>
+        <p>To reduce greenhouse gasses and minimize the effects of climate change, immediate actions are needed. Faraday has since transitioned to eco-friendly and emission-free manufacturing in an attempt to kickstart a green movement within the industry
+        .Each individual serves a role in the process and should be encouraged to reduce their greenhouse gasses contributions.To calculate your greenhouse gas emissions, please utilize the calculator tool below.</p>
+        <center>
+        <button id="b2" onclick="calc()" > Take me to the carbon footprint calculator<i class="fas fa-calculator"></i></button>
+      </center>
+      </div>
+      <div id="embed_calculator" style="display:none;">
+        <iframe style="margin-top:200px;" width="100%" height="565" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" src="https://calculator.carbonfootprint.com/calculator.aspx"></iframe>
+          <center>
+          <button id="b2" onclick="info()" ><i class="fas fa-arrow-left"></i> Return </button>
+        </center>
+      </div>
+    </div>
+    </div>
+    <footer>
+      <div class="infofooter">
+      <div class="footerbranding">
+        <br><br>
+        <img src="white waves.png" alt="logo" width="15%" id="footerlogo">
+        <h1 id="footerh1">FARADAY FUTURISTICS</h1>
+      </div>
+      <div class="footerhelp">
+        <p id="footerheader">Questions?</p>
+        <p id="footerhelp"><a href="help.html">Read our FAQ here.</a></p>
+        <p id="footerheader">Need further help?</p>
+        <p id="footerhelp">Contact our customer support at:<br>support@faraday.com<br>Contact - 04-111-7738<br> Submit a Customer Support ticket</p>
+        <p id="footerheader"><a href="help.html">Privacy Policy | Terms & Conditions</a></p>
+      </div>
+    </footer>
+</body>
+</html>
